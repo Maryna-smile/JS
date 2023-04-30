@@ -1,40 +1,40 @@
 // Норма
 
 // 1. Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”;
-let userName = prompt('Як тебе звати?', "Анонім");
+const userName = prompt("Як тебе звати?", "Анонім");
 
-alert(`Привіт, ${userName}!`); 
+alert(`Привіт, ${userName}!`);
 
 // 2. Запитай рік народження користувача, порахуй його/її вік і виведи результат. Поточний рік вкажи в коді як константу;
 const currentYear = 2023;
-let userBirthYear = prompt('Bведи свій рік народження');
-let userAge = currentYear-userBirthYear;
-alert(`Тобі ${userAge} років!`); 
+const userBirthYear = prompt("Bведи свій рік народження");
+const userAge = currentYear - userBirthYear;
+alert(`Тобі ${userAge} років!`);
 
 // 3. Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата
-let squareSide = prompt('BВведи довжину сторони квадрату');
-let perimeter = squareSide*4;
-alert(`Периметр квадрату складає ${userAge} см!`); 
+const squareSide = prompt("BВведи довжину сторони квадрату");
+const perimeter = squareSide * 4;
+alert(`Периметр квадрату складає ${userAge} см!`);
 
 // Максимум
 
 // Запитай у користувача радіус кола і виведи площу такої окружності.(Sкола= 3,14*r2 )
- 
-let radius = prompt('Bведи довжину радіуса кола');
-let square = Math.PI*radius*radius;
-alert(`Плoща кола складає ${square} см2!`); 
+
+const radius = prompt("Bведи довжину радіуса кола");
+const square = Math.PI * radius * radius;
+alert(`Плoща кола складає ${square} см2!`);
 
 // Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче дістатися. Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно. (v = S : t)
 
-let distance = prompt('відстань в кілометрах між двома містами');
-let time = prompt('За скільки годин хочеш дістатися до місця призначення?');
-let speed = distance/time;
-alert(`Тобі потрібно їхати зі швидкістю ${speed} км на год!`); 
+const distance = prompt("відстань в кілометрах між двома містами");
+const time = prompt("За скільки годин хочеш дістатися до місця призначення?");
+const speed = distance / time;
+alert(`Тобі потрібно їхати зі швидкістю ${speed} км на год!`);
 
 // Реалізуй конвертор валют. Користувач вводить долари, програма переводить їх в євро. Курс валют зберігається в константі.
 
 const currancyRate = 0.9;
-let dollars = prompt('Скільки баксів хочеш поміняти?');
-let euro = currancyRate*dollars;
+const dollars = prompt("Скільки баксів хочеш поміняти?");
+const euro = currancyRate * dollars;
 
-alert(`За  ${dollars} баксів ти отримаєш  ${euro} євриків `); 
+alert(`За  ${dollars} баксів ти отримаєш  ${euro} євриків `);
