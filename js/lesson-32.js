@@ -23,12 +23,15 @@ const arrowArgs = (...args) => console.log(args.length);
 // 0 - якщо числа рівні.
 
 const comparisonFunc = (a, b) => {
-  
+
   if (a < b) {
+
     return -1;
   } else if (a > b) {
+
     return 1;
   } else {
+
     return 0;
   }
 };
@@ -43,6 +46,7 @@ const findFactorial = (number) => {
   for (item = 1; item <= number; item += 1) {
     factorial *= item;
   }
+
   return factorial;
 };
 
@@ -52,6 +56,7 @@ console.log(findFactorial(6));
 
 const makeOneNumber = (num1, num2, num3) => {
   const newNum = String(num1) + String(num2) + String(num3);
+
   return newNum;
 };
 console.log(makeOneNumber(1, 4, 7));
@@ -59,6 +64,7 @@ console.log(makeOneNumber(1, 4, 7));
 // Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
 
 const calculateArea = (size1, size2 = size1) => {
+  
   return size1 * size2;
 };
 console.log(calculateArea(7));
