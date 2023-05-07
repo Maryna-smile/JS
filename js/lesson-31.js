@@ -7,6 +7,7 @@ const age = parseInt(prompt("Введіть свій вік:"));
 if (isNaN(age)) {
   alert("Ви ввели некоректне значення для віку.");
 } else {
+
   if (age < 0) {
     alert("Ви ще не народилися :)");
   } else if (age <= 11) {
@@ -66,10 +67,12 @@ if (isNaN(number) || number < 0 || number > 9) {
 // Підрахуй суму всіх чисел в заданому користувачем діапазоні.
 const num1 = parseInt(prompt("Введіть перше число діапазону: "));
 const num2 = parseInt(prompt("Введіть друге число діапазону: "));
+
 if (isNaN(num1) || isNaN(num2)) {
   alert("Ви ввели некоректні дані.");
 } else {
   let sum = 0;
+
   for (let item = num1; item <= num2; item += 1) {
     sum += item;
   }
@@ -87,6 +90,7 @@ function findGCD(firstNumber, secondNumber) {
     secondNumber = firstNumber % secondNumber;
     firstNumber = temp;
   }
+
   return firstNumber;
 }
 
@@ -102,6 +106,7 @@ if (isNaN(numberX)) {
   alert("Ви ввели некоректні дані.");
 } else {
   const divisors = [];
+
   for (let item = 1; item <= numberX; item += 1) {
     if (numberX % item === 0) {
       divisors.push(item);
@@ -142,7 +147,7 @@ if (money < 200) {
   discount = 0.07;
 }
 
-let price = money - money * discount;
+const price = money - money * discount;
 console.log(`you need to pay ${price} hrn`);
 
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
@@ -197,12 +202,13 @@ let daysOfWeek = [
   "Неділя",
 ];
 
-for (let i = 0; i <= daysOfWeek.length; i += 1) {
-  let answer = confirm(daysOfWeek[i] + ". Хочеш побачити наступний день?");
+for (let index = 0; index <= daysOfWeek.length; index += 1) {
+  let answer = confirm(daysOfWeek[index] + ". Хочеш побачити наступний день?");
+
   if (!answer) {
     break;
-  } else if (i === daysOfWeek.length) {
-    i = 0;
+  } else if (index === daysOfWeek.length) {
+    index = 0;
   }
 }
 
